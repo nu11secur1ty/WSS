@@ -1,4 +1,4 @@
-"""The WPSeku main part."""
+"""The WSS main part."""
 import getopt
 
 from lib.scan import *
