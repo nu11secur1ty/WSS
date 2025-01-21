@@ -6,7 +6,7 @@ WSS is a black box WordPress vulnerability scanner that can be used to scan remo
 
 ![python](https://img.shields.io/badge/python-3.x-green.svg) ![license](https://img.shields.io/badge/License-GPLv3-brightgreen.svg)
 
-![screen_1](https://raw.githubusercontent.com/nu11secur1ty/WSS/master/screen/main.png)
+![screen_1]()
 
 ## Installation
 ```
