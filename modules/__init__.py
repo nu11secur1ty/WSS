@@ -1,1 +1,1 @@
-"""WPSeku modules."""
+"""WSS modules."""
