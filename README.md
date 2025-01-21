@@ -87,7 +87,7 @@ by nu11secur1ty
 
 ### Scan plugin,theme and wordpress code
 
-`python3 wpseku.py --scan <dir/file> --verbose`
+`python3 wss.py --scan <dir/file> --verbose`
 
 __Note__: Testing Akismet Directory Plugin https://plugins.svn.wordpress.org/akismet
 
