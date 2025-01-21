@@ -18,7 +18,7 @@ $ python wss.py
 ## Usage
 ### Generic Scan
 
-`python3 wpseku.py --url https://www.xxxxxxx.com --verbose`
+`python3 wss.py --url https://www.xxxxxxx.com --verbose`
 
 * __Output__
 
