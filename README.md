@@ -1,6 +1,16 @@
  WSS - Wordpress Security Scanner
 --
-_Note: building of a new version is underway..._
+
+Google Dork 
+--
+
+## WARNING! Every malicious action from your side is your responsibility!
+
+```
+index of" inurl:wp-content/                      7,370,000 results 
+inurl:"/wp-content/plugins/wp-shopping-cart/"    281,000 results
+inurl:wp-content/plugins/wp-dbmanager/"          11,000 results
+```
 
 WSS is a black box WordPress vulnerability scanner that can be used to scan remote WordPress installations to find security issues.
 
