@@ -69,7 +69,7 @@ by nu11secur1ty
 ```
 ### Bruteforce Login
 
-`python3 wpseku.py --url https://www.xxxxxxx.com --brute --user test --wordlist wl.txt --verbose`
+`python3 wss.py --url https://www.xxxxxxx.com --brute --user test --wordlist wl.txt --verbose`
 
 * __Output__
 
