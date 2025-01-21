@@ -6,7 +6,7 @@ WSS is a black box WordPress vulnerability scanner that can be used to scan remo
 
 ![python](https://img.shields.io/badge/python-3.x-green.svg) ![license](https://img.shields.io/badge/License-GPLv3-brightgreen.svg)
 
-![screen_1]()
+![screen_1](https://raw.githubusercontent.com/nu11secur1ty/WSS/master/screen/main.png)
 
 ## Installation
 ```
@@ -18,7 +18,7 @@ $ python wss.py
 ## Usage
 ### Generic Scan
 
-`python3 wss.py --url https://www.xxxxxxx.com --verbose`
+`python3 wpseku.py --url https://www.xxxxxxx.com --verbose`
 
 * __Output__
 
@@ -55,7 +55,7 @@ by nu11secur1ty
 ```
 ### Bruteforce Login
 
-`python3 wss.py --url https://www.xxxxxxx.com --brute --user test --wordlist wl.txt --verbose`
+`python3 wpseku.py --url https://www.xxxxxxx.com --brute --user test --wordlist wl.txt --verbose`
 
 * __Output__
 
@@ -87,7 +87,7 @@ by nu11secur1ty
 
 ### Scan plugin,theme and wordpress code
 
-`python3 wss.py --scan <dir/file> --verbose`
+`python3 wpseku.py --scan <dir/file> --verbose`
 
 __Note__: Testing Akismet Directory Plugin https://plugins.svn.wordpress.org/akismet
 
