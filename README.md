@@ -18,7 +18,7 @@ $ python wss.py
 ## Usage
 ### Generic Scan
 
-`python3 wpseku.py --url https://www.xxxxxxx.com --verbose`
+`python3 wss.py --url https://www.xxxxxxx.com --verbose`
 
 * __Output__
 
@@ -55,7 +55,7 @@ by nu11secur1ty
 ```
 ### Bruteforce Login
 
-`python3 wpseku.py --url https://www.xxxxxxx.com --brute --user test --wordlist wl.txt --verbose`
+`python3 wss.py --url https://www.xxxxxxx.com --brute --user test --wordlist wl.txt --verbose`
 
 * __Output__
 
@@ -87,7 +87,7 @@ by nu11secur1ty
 
 ### Scan plugin,theme and wordpress code
 
-`python3 wpseku.py --scan <dir/file> --verbose`
+`python3 wss.py --scan <dir/file> --verbose`
 
 __Note__: Testing Akismet Directory Plugin https://plugins.svn.wordpress.org/akismet
 
