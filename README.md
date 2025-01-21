@@ -1,8 +1,7 @@
  WSS - Wordpress Security Scanner
 --
 
-Google Dork 
---
+- - *Google Dorks* 
 
 ## WARNING! Every malicious action from your side is your responsibility!
 
