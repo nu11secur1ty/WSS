@@ -1,4 +1,4 @@
-<h1 align="center">Material Bread</h1>
+<h1 align="center">WSS - WordPress Security Scanner</h1>
 
 
 <p align="center">
@@ -14,7 +14,7 @@ inurl:"/wp-content/plugins/wp-shopping-cart/"    281,000 results
 inurl:wp-content/plugins/wp-dbmanager/"          11,000 results
 ```
 
-WSS is a black box WordPress vulnerability scanner that can be used to scan remote WordPress installations to find security issues.
+WSS is a black box WordPress vulnerability scanner that can scan remote WordPress installations to find security issues.
 
 ![python](https://img.shields.io/badge/python-3.x-green.svg) ![license](https://img.shields.io/badge/License-GPLv3-brightgreen.svg)
 
