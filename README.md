@@ -213,5 +213,5 @@ Original idea and script from WPScan Team (https://wpscan.org/)
 
 WPScan Vulnerability Database (https://wpvulndb.com/api)
 
-## Demo:
+## Demo when the target is protected:
 [Patreon](https://www.patreon.com/posts/wss-blocking-120544734)
