@@ -4,6 +4,7 @@
 <p align="center">
 <img src="https://github.com/nu11secur1ty/WSS/blob/main/screen/logo.gif"/>
 </p>
+
 - - *Google Dorks* 
 
 ## WARNING! Every malicious action from your side is your responsibility!
