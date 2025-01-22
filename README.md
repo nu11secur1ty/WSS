@@ -204,6 +204,9 @@ by nu11secur1ty
 [ + ] Not found vulnerabilities
 
 ```
+## Extensions:
+
+[](https://github.com/nu11secur1ty/WSS/tree/main/extensions)
 
 ## Credits and Contributors
 Original idea and script from WPScan Team (https://wpscan.org/)
