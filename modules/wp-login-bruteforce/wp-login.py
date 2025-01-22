@@ -28,7 +28,7 @@ def attempt_login( username , password , url , isFile )  :
         resp = requests.post( url = url, data = PARAMS, headers = HEADERS, allow_redirects=False, verify=False )    
 
     except :    
-        print("\n*** Connection Error has occured *** "  )    
+        print("\n*** Connection Error has occurred *** "  )    
         exit() 
  
 
@@ -119,7 +119,7 @@ def main () :
     help_message =  """  
             Usage :  \n 
             brute force with valid username :  \n  
-            python3 bf.py -t http://0.0.0.0/wp-login.php  -u user -p /home/mivatampos/ctf/mr_robot_1/test.txt  \n 
+            python3 bf.py -t http://0.0.0.0/wp-login.php  -u user -p /path/to/password.txt  \n 
             Enumerate users ( just dont provide the -p flag it will use the default "admin" password to attempt the login : \n 
             python3 bf.py -t http://0.0.0.0/wp-login.php  -u usernames.txt 
             """ 
