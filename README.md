@@ -212,3 +212,6 @@ by nu11secur1ty
 Original idea and script from WPScan Team (https://wpscan.org/)
 
 WPScan Vulnerability Database (https://wpvulndb.com/api)
+
+## Demo:
+[Patreon](https://www.patreon.com/posts/wss-blocking-120544734)
