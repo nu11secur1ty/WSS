@@ -1,6 +1,5 @@
- WSS - WordPress Security Scanner
---
 <p align="center">
+ <h1>WSS - WordPress Security Scanner</h1><br>
 <img src="https://github.com/nu11secur1ty/WSS/blob/main/screen/logo.gif"/>
 </p>
 - - *Google Dorks* 
