@@ -1,5 +1,6 @@
  WSS - Wordpress Security Scanner
 --
+![](https://github.com/nu11secur1ty/WSS/blob/main/screen/logo.gif)
 
 - - *Google Dorks* 
 
