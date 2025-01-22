@@ -1,6 +1,9 @@
-<p align="center">
- <h1>WSS - WordPress Security Scanner</h1><br>
-</p>
+# <center> LDC </center>
+
+## title title title
+
+### <center> GRANT </center> 
+**blablablablabalbalbalab**
 <p align="center">
 <img src="https://github.com/nu11secur1ty/WSS/blob/main/screen/logo.gif"/>
 </p>
