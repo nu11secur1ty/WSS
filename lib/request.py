@@ -51,6 +51,7 @@ class Request(object):
 							})
 			# post
 			elif method.lower() == "post":
+				if data: url = "{}".format(Data(url,data))
 				req = make_req.request(
 					method = method.upper(),
 					url = url,
@@ -64,6 +65,6 @@ class Request(object):
 						    'https':self.kwarg['proxy']
 						    })
 		except requests.exceptions.ConnectionError:
-			exit(warn('POST METHOD: Failed to establish a new connection'))
+			exit(warn('WARNING: The connection is lost! It depends on the defense of the target!'))
 		# return req attr
 		return req
