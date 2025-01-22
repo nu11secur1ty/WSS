@@ -1,4 +1,4 @@
-<h1 align="center">WSS - WordPress Security Scanner</h1>
+<h1 align="center">WSS: WordPress Security Scanner</h1>
 
 
 <p align="center">
