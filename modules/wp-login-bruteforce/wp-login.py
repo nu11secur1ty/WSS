@@ -102,7 +102,17 @@ def execute  () :
         for i in usernames : 
             print (f'{" " * 9 } [+] "{i}" [+] ')
 
+print("""
 
+$$       $$   $$$$$$    $$$$$$ 
+$$   $   $$  $$    $$  $$    $$
+$$  $$$  $$  $$        $$ 
+$$ $$ $$ $$   $$$$$$    $$$$$$  
+$$$$   $$$$        $$        $$ 
+$$$     $$$  $$    $$  $$    $$ 
+$$       $$   $$$$$$    $$$$$$  
+
+""") 
 
 def main () :   
     global args   
@@ -120,9 +130,7 @@ def main () :
     parser.add_argument("-u", "--username", help="valid username or file "  )
     parser.add_argument("-t", "--url", help="url/target to attack  ")
     parser.add_argument("-p", "--passlist", help="password list address ") 
-    args = parser.parse_args()       
-
-    print("""  WSS  """ )    
+    args = parser.parse_args()          
 
     #call execute function to start the attack
     execute() 
