@@ -51,7 +51,6 @@ class Request(object):
 							})
 			# post
 			elif method.lower() == "post":
-				if data: url = "{}".format(Data(url,data))
 				req = make_req.request(
 					method = method.upper(),
 					url = url,
