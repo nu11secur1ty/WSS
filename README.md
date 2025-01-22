@@ -7,7 +7,7 @@
 
 - - *Google Dorks* 
 
-## WARNING! Every malicious action from your side is your responsibility!
+## WARNING! Every malicious action from your side will be your responsibility!
 
 ```
 index of" inurl:wp-content/                      7,370,000 results 
