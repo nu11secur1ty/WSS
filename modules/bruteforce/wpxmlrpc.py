@@ -27,7 +27,7 @@ class XMLRPCBrute(Request):
 			exit(warn('XML-RPC not found with this path: %s'%url))
 
 	def run(self):
-		plus('Bruteforcing Login via XML-RPC...')
+		plus('Brute Forcing Login via XMLRPC...When you see any valid credentials press Ctrl + C to exit.')
 		if self.kwargs['verbose'] is True:
 			info('Setting user: %s'%(self.user))
 		self.check()
