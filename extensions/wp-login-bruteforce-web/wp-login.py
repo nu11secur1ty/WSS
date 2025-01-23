@@ -11,7 +11,7 @@ import sys
 import urllib3
 urllib3.disable_warnings()  
 
-target = input("Give the domain or IP of the target! NOTE: If you see that the page is not found or there is some restriction press Ctrl + C\n")
+target = input("Give the domain or IP of the target on the end with '/'! NOTE: If you see that the page is not found or there is some restriction press Ctrl + C\n")
 manipolate = "wp-login.php"
 webbrowser.open(target + manipolate)
 print("We will wait for you to make a decision, if you want to continue press ENTER...\n")
