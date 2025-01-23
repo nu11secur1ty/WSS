@@ -6,6 +6,8 @@
 
 import sys
 from time import strftime
+import urllib3
+urllib3.disable_warnings()
 
 from lib.printer import *
 
@@ -17,7 +19,7 @@ def ptime(url):
 	normal('')
 
 def banner():
-	print("-"*40)
+	print("\n")
 	print("$$       $$   $$$$$$    $$$$$$  ") 
 	print("$$   $   $$  $$    $$  $$    $$ ")
 	print("$$  $$$  $$  $$        $$       ")
@@ -28,7 +30,7 @@ def banner():
 	print("v0.4.0\n")
 	print("WSS - Wordpress Security Scanner")
 	print("by nu11secur1ty")
-	print("-"*40+"\n")
+	print("\n")
 	
 def usage(e=False):
 	banner()

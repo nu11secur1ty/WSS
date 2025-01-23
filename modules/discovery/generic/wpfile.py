@@ -1,5 +1,7 @@
 """Support for discovering Wordpress files."""
 from os.path import realpath
+import urllib3
+urllib3.disable_warnings()
 
 from lib.readfile import *
 from lib.request import *

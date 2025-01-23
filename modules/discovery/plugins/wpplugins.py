@@ -2,6 +2,8 @@
 from os.path import exists, join, realpath
 from json import loads
 from re import I, findall, search
+import urllib3
+urllib3.disable_warnings()
 
 from lib.request import *
 

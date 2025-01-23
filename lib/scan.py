@@ -11,6 +11,8 @@ import os
 import re
 import sys
 import time
+import urllib3
+urllib3.disable_warnings()
 
 from humanfriendly.tables import format_pretty_table
 

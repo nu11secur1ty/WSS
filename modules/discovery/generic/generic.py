@@ -6,7 +6,8 @@ from modules.discovery.generic.wplisting import *
 from modules.discovery.generic.wplogin import *
 from modules.discovery.generic.wprobots import *
 from modules.discovery.generic.wpversion import *
-
+import urllib3
+urllib3.disable_warnings()
 
 def generic(url,data,kwargs):
 	wpfpd(url,data,kwargs).run()

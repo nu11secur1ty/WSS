@@ -7,7 +7,8 @@
 from urllib.parse import urlparse
 
 from lib.printer import *
-
+import urllib3
+urllib3.disable_warnings()
 
 def Data(url,data):
 	""" Check url and data path """

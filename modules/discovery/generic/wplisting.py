@@ -1,6 +1,8 @@
 """Support for discovering Wordpress listings."""
 from os.path import realpath
 from re import I, search
+import urllib3
+urllib3.disable_warnings()
 
 from lib.readfile import *
 from lib.request import *

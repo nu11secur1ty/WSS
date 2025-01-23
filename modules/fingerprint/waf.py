@@ -2,6 +2,8 @@
 from re import search
 
 from lib.printer import *
+import urllib3
+urllib3.disable_warnings()
 
 
 def wordfence_security(content):

@@ -1,6 +1,7 @@
 """Support for discovering Wordpress robots."""
 from lib.request import *
-
+import urllib3
+urllib3.disable_warnings()
 
 class wprobots(Request):
 	def __init__(self,url,data,kwargs):

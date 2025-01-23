@@ -1,5 +1,7 @@
 """The WSS main part."""
 import getopt
+import urllib3
+urllib3.disable_warnings()
 
 from lib.scan import *
 from lib.usage import *

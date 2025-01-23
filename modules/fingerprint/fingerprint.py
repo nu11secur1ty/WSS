@@ -4,6 +4,8 @@ from modules.fingerprint.cms import *
 from modules.fingerprint.headers import *
 from modules.fingerprint.server import *
 from modules.fingerprint.waf import *
+import urllib3
+urllib3.disable_warnings()
 
 
 class fingerprint(Request):

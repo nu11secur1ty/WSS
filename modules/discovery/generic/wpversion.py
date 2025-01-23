@@ -1,6 +1,8 @@
 """Support for discovering Wordpress versions."""
 from json import loads
 from re import findall
+import urllib3
+urllib3.disable_warnings()
 
 from lib.request import *
 

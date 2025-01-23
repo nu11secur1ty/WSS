@@ -5,6 +5,8 @@
 # nu11secur1ty
 
 from lib.colors import *
+import urllib3
+urllib3.disable_warnings()
 
 
 def decode(string):

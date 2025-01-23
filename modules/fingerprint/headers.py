@@ -1,5 +1,7 @@
 """Support for getting the HTTP headers."""
 from lib.printer import *
+import urllib3
+urllib3.disable_warnings()
 
 
 def headers(headers):

@@ -1,6 +1,8 @@
 """Support for discovering Wordpress users."""
 from json import loads
 from re import I, findall
+import urllib3
+urllib3.disable_warnings()
 
 from humanfriendly.tables import format_pretty_table
 

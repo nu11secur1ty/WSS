@@ -5,6 +5,8 @@
 # nu11secur1ty
 
 from random import randint
+import urllib3
+urllib3.disable_warnings()
 
 
 def ragent():
