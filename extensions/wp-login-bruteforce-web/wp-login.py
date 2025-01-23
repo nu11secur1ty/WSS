@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # WSS - wp-login.php by nu11secur1ty
 
+import webbrowser 
 import os 
 import random 
 import requests 
@@ -9,6 +10,12 @@ import argparse
 import sys 
 import urllib3
 urllib3.disable_warnings()  
+
+target = input("Give the domain or IP of the target! NOTE: If you see that the page is not found or there is some restriction press Ctrl + C\n")
+manipolate = "wp-login.php"
+webbrowser.open(target + manipolate)
+print("We will wait for you to make a decision, if you want to continue press ENTER...\n")
+input()
  
 def attempt_login( username , password , url , isFile )  :    
 
