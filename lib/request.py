@@ -6,6 +6,7 @@
 
 import requests
 import urllib3
+urllib3.disable_warnings()
 
 from lib.check import *
 from lib.printer import *
