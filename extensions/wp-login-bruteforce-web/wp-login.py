@@ -109,17 +109,18 @@ def execute  () :
         for i in usernames : 
             print (f'{" " * 9 } [+] "{i}" [+] ')
 
-print("""
-
-$$       $$   $$$$$$    $$$$$$ 
-$$   $   $$  $$    $$  $$    $$
-$$  $$$  $$  $$        $$ 
-$$ $$ $$ $$   $$$$$$    $$$$$$  
-$$$$   $$$$        $$        $$ 
-$$$     $$$  $$    $$  $$    $$ 
-$$       $$   $$$$$$    $$$$$$  
-
-""") 
+print("\n")
+print("$$       $$   $$$$$$    $$$$$$  ") 
+print("$$   $   $$  $$    $$  $$    $$ ")
+print("$$  $$$  $$  $$        $$       ")
+print("$$ $$ $$ $$   $$$$$$    $$$$$$  ")
+print("$$$$   $$$$        $$        $$ ")
+print("$$$     $$$  $$    $$  $$    $$ ")
+print("$$       $$   $$$$$$    $$$$$$  ")
+print("v0.4.0\n")
+print("WSS - Wordpress Security Scanner")
+print("by nu11secur1ty")
+print("\n")
 
 def main () :   
     global args   
