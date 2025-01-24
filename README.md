@@ -48,7 +48,7 @@ $$ $$ $$ $$   $$$$$$    $$$$$$
 $$$$   $$$$        $$        $$
 $$$     $$$  $$    $$  $$    $$
 $$       $$   $$$$$$    $$$$$$
-v0.4.0
+v4.0
 
 WSS - Wordpress Security Scanner
 by nu11secur1ty
@@ -89,7 +89,7 @@ $$ $$ $$ $$   $$$$$$    $$$$$$
 $$$$   $$$$        $$        $$
 $$$     $$$  $$    $$  $$    $$
 $$       $$   $$$$$$    $$$$$$
-v0.4.0
+v4.0
 
 WSS - Wordpress Security Scanner
 by nu11secur1ty
@@ -127,7 +127,7 @@ $$ $$ $$ $$   $$$$$$    $$$$$$
 $$$$   $$$$        $$        $$
 $$$     $$$  $$    $$  $$    $$
 $$       $$   $$$$$$    $$$$$$
-v0.4.0
+v4.0
 
 WSS - Wordpress Security Scanner
 by nu11secur1ty
