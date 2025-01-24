@@ -1,5 +1,9 @@
 <h1 align="center">WSS: WordPress Security Scanner</h1>
 
+*Python* support:
+
+- 3.13.1
+
 <!---<h1 align="center">~WSS:</b> In Development mode!!!~</h1>-->
 
 ~WSS:</b> In Development mode!!!~
