@@ -214,6 +214,13 @@ by nu11secur1ty
 ## Credits and Contributors
 Original idea and script from WPScan Team (https://wpscan.org/)
 
+## Useful links:
+[URL-1](https://wpscan.com/)
+
+[URL-2](https://wpscan.com/plugins/)
+
+[URL-3](https://wpscan.com/themes/)
+
 WPScan Vulnerability Database (https://wpvulndb.com/api)
 
 ## Demo when the target is protected:
