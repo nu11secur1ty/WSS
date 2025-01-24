@@ -4,7 +4,7 @@
 
 - 3.13.1
 
-<h1 align="center">~WSS:</b> In Development mode!!!~</h1>
+<h1 align="center">WSS:</b> In Development mode!!!</h1>
 
 <!--~WSS:In Development mode!!!~-->
 
