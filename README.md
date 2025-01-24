@@ -1,5 +1,6 @@
 <h1 align="center">WSS: WordPress Security Scanner</h1>
 
+<h1 align="center"><b>WSS:</b> In Development mode!!!</h1>
 
 <p align="center">
 <img src="https://github.com/nu11secur1ty/WSS/blob/main/screen/logo.gif"/>
