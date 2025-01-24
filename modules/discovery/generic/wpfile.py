@@ -18,7 +18,7 @@ class wpfile(Request):
 		if self.kwargs['verbose'] is True:
 			info('Checking common files...')
 		path  = realpath(__file__).split('modules')[0]
-		path += "db/commonfile.wpseku"
+		path += "db/commonfile.wss"
 		for file in readfile(path):
 			url = Path(self.url,file.decode('utf-8'))
 			resp = self.send(url=url,method="GET")

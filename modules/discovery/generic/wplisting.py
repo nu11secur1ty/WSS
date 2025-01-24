@@ -19,7 +19,7 @@ class wplisting(Request):
 		if self.kwargs['verbose'] is True:
 			info('Checking directory listing...')
 		path  = realpath(__file__).split('modules')[0]
-		path += "db/dirlisting.wpseku"
+		path += "db/dirlisting.wss"
 		for dir_ in readfile(path):
 			url = Path(self.url,dir_.decode('utf-8'))
 			resp = self.send(url=url,method="GET")

@@ -49,7 +49,7 @@ class wpusers(Request):
 		url = Path(self.url, '/wp-json/wp/v2/users')
 		resp = self.send(url=url, method="GET")
 		if resp.status_code == 200:
-			json = loads(resp.content, encoding="utf-8")
+			json = loads(resp.content)
 			for x in range(len(json)):
 				users.append((json[x]['name'], json[x]['slug']))
 		return users
@@ -60,7 +60,7 @@ class wpusers(Request):
 		resp = self.send(url=url, method="GET")
 		if resp.status_code == 200:
 			try:
-				json = loads(resp.content, encoding="utf-8")
+				json = loads(resp.content)
 				for x in range(len(json)):
 					users.append((json[x]['name'], json[x]['slug']))
 			except json.decoder.JSONDecodeError:
@@ -73,14 +73,14 @@ class wpusers(Request):
 		resp = self.send(url=url, method="GET")
 		if resp.status_code == 200:
 			_users_ = findall(
-				decode('<dc:creator><!\[CDATA\[(.+?)\]\]></dc:creator>'),
+				decode("<dc:creator><![CDATA[admin]]></dc:creator>"),
 				resp.content, I
 			)
 			for user in _users_:
 				if user not in users:
 					if user != []:
 						if user != '':
-							users.append((user.decode('utf-8'),'None'))
+							users.append((user.decode('UTF-8'),'None'))
 		return users
 
 	def wpauthor(self):

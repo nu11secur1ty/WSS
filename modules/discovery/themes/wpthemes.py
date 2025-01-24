@@ -112,7 +112,8 @@ class wpthemes(Request):
 		if self.kwargs['verbose'] is True:
 			info('Checking theme vulnerabilities...')
 		theme = theme.decode('utf-8')
-		url = "https://www.wpvulndb.com/api/v2/themes/%s"%(theme)
+		# Work here
+		url = "https://wpscan.com/themes/%s"%(theme)
 		resp = self.send(url=url,method="GET")
 		if resp.headers['Content-Type'] == 'application/json':
 			json = loads(resp.content)

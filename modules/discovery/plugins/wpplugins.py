@@ -28,7 +28,7 @@ class wpplugins(Request):
 		if self.kwargs['verbose'] is True:
 			info('Checking plugins changelog...')
 		for file in self.files.get('changelogs', []):
-			url = Path(self.url, '/wp-content/plugins/%s/%s' % (plugin, file))
+			url = Path(self.url, '/wp-content/plugins/' % (plugin, file))
 			resp = self.send(url=url, method="GET")
 			if resp.status_code == 200 and resp.content != ("" or None):
 				if resp.url == url:
@@ -40,12 +40,12 @@ class wpplugins(Request):
 			info('Checking plugins full path disclosure...')
 
 		for file in self.files.get('fpd', []):
-			url = Path(self.url, '/wp-content/plugins/%s/%s' % (plugin, file))
+			url = Path(self.url, '/wp-content/plugins/' % (plugin, file))
 			resp = self.send(url=url, method="GET")
 			if resp.status_code == 200 and resp.content != ("" or None):
 				if resp.url == url:
 					if search(decode('<b>Fatal error</b>:'), resp.content, I):
-						path_d = findall(decode('<b>(/\S*)</b>'), resp.content)[0]
+						path_d = findall(decode('*'), resp.content)[0]
 						more('FPD (Full Path Disclosure): %s' % (path_d.decode('utf-8')))
 						break
 
@@ -54,7 +54,7 @@ class wpplugins(Request):
 			info('Checking plugins license...')
 
 		for file in self.files.get('license', []):
-			url = Path(self.url, '/wp-content/plugins/%s/%s' % (plugin, file))
+			url = Path(self.url, '/wp-content/plugins/' % (plugin, file))
 			resp = self.send(url=url, method="GET")
 			if resp.status_code == 200 and resp.content != ("" or None):
 				if resp.url == url:
@@ -66,7 +66,7 @@ class wpplugins(Request):
 			info('Checking plugins directory listing...')
 
 		for dir_ in self.files.get('dirs', []):
-			url = Path(self.url, '/wp-content/plugins/%s/%s' % (plugin, dir_))
+			url = Path(self.url, '/wp-content/plugins/' % (plugin, dir_))
 			resp = self.send(url=url, method="GET")
 			if resp.status_code == 200 and resp.content != ("" or None):
 				if search(decode('<title>Index of'), resp.content, I):
@@ -77,7 +77,7 @@ class wpplugins(Request):
 			info('Checking plugins readme...')
 
 		for file in self.files.get('readme', []):
-			url = Path(self.url, '/wp-content/plugins/%s/%s' % (plugin, file))
+			url = Path(self.url, '/wp-content/plugins/' % (plugin, file))
 			resp = self.send(url=url, method="GET")
 			if resp.status_code == 200 and resp.content != ("" or None):
 				if resp.url == url:
@@ -86,8 +86,8 @@ class wpplugins(Request):
 
 	def run(self):
 		info('Passive enumeration plugins...')
-		plugins = self.s_plugins()
-		if plugins != []:
+		plugin = self.s_plugins()
+		if plugin != []:
 			for plugin in plugins:
 				plus('Name: %s' % (plugin.decode('utf-8')))
 				self.changelog(plugin)
@@ -112,7 +112,8 @@ class wpplugins(Request):
 		if self.kwargs['verbose'] is True:
 			info('Checking plugin vulnerabilities...')
 		plugin = plugin.decode('utf-8')
-		url = "https://www.wpvulndb.com/api/v2/plugins/%s"%(plugin)
+		# 2025 check
+		url = "https://wpscan.com/plugins/"%(plugin)
 		resp = self.send(url=url,method="GET")
 		print(resp.content)
 		if resp.headers['Content-Type'] == 'application/json':

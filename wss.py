@@ -13,8 +13,8 @@ from modules.discovery.users.wpusers import *
 from modules.fingerprint.fingerprint import *
 
 
-class wpseku(object):
-	"""WPSeku main object"""
+class wss(object):
+	"""WSS main object"""
 	kwargs = {
 			 'agent':ragent(),'ragent':False,'redirect':True,
 			  'cookie':None,'proxy':None,'timeout':None,'verbose':False,'headers':{}
@@ -70,6 +70,6 @@ class wpseku(object):
 
 if __name__ == "__main__":
 	try:
-		wpseku().main()
+		wss().main()
 	except KeyboardInterrupt:
 		exit(warn('CTRL+C...'))

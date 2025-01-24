@@ -26,7 +26,7 @@ class wpconfig(Request):
 
 	def wpconfig_backup(self):
 		path  = realpath(__file__).split('modules')[0]
-		path += "db/backupfile.wpseku"
+		path += "db/backupfile.wss"
 		for ext in readfile(path):
 			url = Path(self.url,"wp-config.php"+ext.decode('utf-8'))
 			resp = self.send(url=url,method="GET")
