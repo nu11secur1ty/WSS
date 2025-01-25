@@ -249,3 +249,6 @@ WPScan Vulnerability Database (https://wpvulndb.com/api)
 
 ## Demo when the target is protected:
 [Patreon](https://www.patreon.com/posts/wss-blocking-get-120555453)
+
+## Many thanks to:
+- [WPScan](https://wpscan.com/)
