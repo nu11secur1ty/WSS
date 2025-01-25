@@ -33,6 +33,7 @@ inurl:wp-content/plugins/wp-dbmanager/"          11,000 results
 ```
 
 WSS is a black box WordPress vulnerability scanner that can scan remote WordPress installations to find security issues.
+It is RECOMMENDED that every company, who can not buy professional IT's and experts!
 
 ![python](https://img.shields.io/badge/python-3.x-green.svg) ![license](https://img.shields.io/badge/License-GPLv3-brightgreen.svg)
 
