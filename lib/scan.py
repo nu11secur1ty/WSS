@@ -92,8 +92,8 @@ class Scan:
 		# check cross-site request forgery
 		vuln = []
 		blacklist = [
-		             '^wp_nonce_field\(\S*\)','^wp_nonce_url\(\S*\)',
-		             '^wp_verify_nonce\(\S*\)','^check_admin_referer\(\S*\)'
+		             "^wp_nonce_field\(\S*\)','^wp_nonce_url\(\S*\)",
+		             "^wp_verify_nonce\(\S*\)','^check_admin_referer\(\S*\)"
 		             ]
 		for b in blacklist:
 			b = decode(b)
@@ -107,7 +107,7 @@ class Scan:
 		# check open redirect
 		vuln = []
 		blacklist = [
-					 '^wp_redirect\(\S*\)'
+					 "^wp_redirect\(\S*\)"
 					 ]
 		for b in blacklist:
 			b = decode(b)
@@ -121,7 +121,7 @@ class Scan:
 		# check php code execution
 		vuln = []
 		blacklist = [
-					  '^eval\(\S*\)', '^assert\(\S*\)', '^preg_replace\(\S*\)'
+					  "^eval\(\S*\)', '^assert\(\S*\)', '^preg_replace\(\S*\)"
 					  ]
 		for b in blacklist:
 			b = decode(b)
