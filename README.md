@@ -8,6 +8,7 @@
 
 *OS's* support:
 
+- Kali Linux latest
 - Ubuntu latest
 - Windows 10, 11
 
