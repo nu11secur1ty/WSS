@@ -18,5 +18,5 @@ class wpfpd(Request):
 		resp = self.send(url=url,method="GET")
 		if resp.status_code == 200 and resp.content != ("" or None):
 			if search(decode('<b>Fatal error</b>:'),resp.content,I):
-				path_d = findall(decode('<b>(/\S*)</b>'),resp.content)[0]
+				path_d = findall(decode('\x3c\x62\x3e\x28\x2f\x5c\x53\x2a\x29\x3c\x2f\x62\x3e'),resp.content)[0]
 				plus('Full Path Disclosure: \033[1;31m%s\033[0m'%(path_d.decode('utf-8')))
