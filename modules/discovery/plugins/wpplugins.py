@@ -2,6 +2,7 @@
 from os.path import exists, join, realpath
 from json import loads
 from re import I, findall, search
+import webbrowser
 
 from lib.request import *
 
@@ -110,11 +111,20 @@ class wpplugins(Request):
 		if self.kwargs['verbose'] is True:
 			info('Checking plugin vulnerabilities...')
 		plugin = plugin.decode('utf-8')
+		
 		# Fix 2025
 		# url = "https://www.wpvulndb.com/api/v2/plugins/%s"%(plugin)
 		url = "https://wpscan.com/plugins/".format(plugin)
+		
+		# Check for vulnerabilities in the WPScan database...
+		target_plugin = input("Give the name of the plugin...\n")
+		check_vuln_plugin = "https://wpscan.com/plugin/"+ target_plugin
+		print("Check the plugins found in WPScan base...\n")
+		webbrowser.open(check_vuln_plugin)
+		
 		resp = self.send(url=url,method="GET")
-		print(resp.content)
+		# print(resp.content)
+		print(resp.status_code)
 		if resp.headers['Content-Type'] == 'application/json':
 			json = loads(resp.content)
 			if json[plugin]:
