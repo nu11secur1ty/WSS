@@ -43,40 +43,53 @@ $ python wss.py
 * __Output__
 
 ```
-----------------------------------------
+[ + ] Target: http://localhost/wordpress/
+[ + ] Starting: 07:23:02
 
-$$       $$   $$$$$$    $$$$$$
-$$   $   $$  $$    $$  $$    $$
-$$  $$$  $$  $$        $$
-$$ $$ $$ $$   $$$$$$    $$$$$$
-$$$$   $$$$        $$        $$
-$$$     $$$  $$    $$  $$    $$
-$$       $$   $$$$$$    $$$$$$
-v4.0
-
-WSS - Wordpress Security Scanner
-by nu11secur1ty
-----------------------------------------
-
-[ + ] Target: https://www.xxxxxxx.com
-[ + ] Starting: 02:38:51
-
-[ + ] Server: Apache
-[ + ] Uncommon header "X-Pingback" found, with contents: https://www.xxxxxxx.com/xmlrpc.php
+[ + ] Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
 [ i ] Checking Full Path Disclosure...
-[ + ] Full Path Disclosure: /home/ehc/public_html/wp-includes/rss-functions.php
 [ i ] Checking wp-config backup file...
-[ + ] wp-config.php available at: https://www.xxxxxxx.com/wp-config.php
+[ + ] wp-config.php available at: http://localhost/wordpress/wp-config.php
 [ i ] Checking common files...
-[ + ] robots.txt file was found at: https://www.xxxxxxx.com/robots.txt
-[ + ] xmlrpc.php file was found at: https://www.xxxxxxx.com/xmlrpc.php
-[ + ] readme.html file was found at: https://www.xxxxxxx.com/readme.html
+[ + ] LICENSE.txt file was found at: http://localhost/wordpress/LICENSE.txt
+[ + ] readme.html file was found at: http://localhost/wordpress/readme.html
 [ i ] Checking directory listing...
-[ + ] Dir "/wp-admin/css" listing enable at: https://www.xxxxxxx.com/wp-admin/css/
-[ + ] Dir "/wp-admin/images" listing enable at: https://www.xxxxxxx.com/wp-admin/images/
-[ + ] Dir "/wp-admin/includes" listing enable at: https://www.xxxxxxx.com/wp-admin/includes/
-[ + ] Dir "/wp-admin/js" listing enable at: https://www.xxxxxxx.com/wp-admin/js/
-......
+[ + ] Dir "/wp-admin/css" listing enable at: http://localhost/wordpress/wp-admin/css/
+[ + ] Dir "/wp-admin/images" listing enable at: http://localhost/wordpress/wp-admin/images/
+[ + ] Dir "/wp-admin/includes" listing enable at: http://localhost/wordpress/wp-admin/includes/
+[ + ] Dir "/wp-admin/js" listing enable at: http://localhost/wordpress/wp-admin/js/
+[ + ] Dir "/wp-content/uploads" listing enable at: http://localhost/wordpress/wp-content/uploads/
+[ + ] Dir "/wp-includes/" listing enable at: http://localhost/wordpress/wp-includes/
+[ + ] Dir "/wp-includes/js" listing enable at: http://localhost/wordpress/wp-includes/js/
+[ + ] Dir "/wp-includes/Text" listing enable at: http://localhost/wordpress/wp-includes/Text/
+[ + ] Dir "/wp-includes/css" listing enable at: http://localhost/wordpress/wp-includes/css/
+[ + ] Dir "/wp-includes/images" listing enable at: http://localhost/wordpress/wp-includes/images/
+[ + ] Dir "/wp-includes/pomo" listing enable at: http://localhost/wordpress/wp-includes/pomo/
+[ + ] Dir "/wp-includes/theme-compat" listing enable at: http://localhost/wordpress/wp-includes/theme-compat/
+[ i ] Checking wp-loging protection...
+[ i ] Checking robots paths...
+[ i ] Checking WordPress version...
+[ + ] Running WordPress version: 6.7.1
+
+[ i ] Passive enumeration themes...
+[ + ] Name: twentytwentyfour
+[ i ] Checking themes changelog...
+[ i ] Checking themes full path disclosure...
+[ i ] Checking themes license...
+[ i ] Checking themes readme...
+[ i ] Checking themes directory listing...
+[ i ] Checking theme vulnerabilities...
+  |   Not found vulnerabilities
+
+[ i ] Passive enumeration plugins...
+[ + ] Not found plugins with passive enumeration
+[ i ] Enumerating users...
+-------------------------
+| ID | Username | Login |
+-------------------------
+|  0 | admin    | admin |
+|  1 |          | admin |
+-------------------------
 ```
 ### Bruteforce Login
 
@@ -85,7 +98,6 @@ by nu11secur1ty
 * __Output__
 
 ```
-----------------------------------------
 $$       $$   $$$$$$    $$$$$$
 $$   $   $$  $$    $$  $$    $$
 $$  $$$  $$  $$        $$
@@ -97,21 +109,20 @@ v4.0
 
 WSS - Wordpress Security Scanner
 by nu11secur1ty
-----------------------------------------
 
-[ + ] Target: https://www.xxxxxxx.com
-[ + ] Starting: 02:46:32
 
-[ + ] Bruteforcing Login via XML-RPC...
-[ i ] Setting user: test
-[ + ] Valid Credentials: 
+[ + ] Target: http://localhost/wordpress/
+[ + ] Starting: 07:25:58
 
------------------------------
-| Username | Passowrd       |
------------------------------
-| test     | kamperasqen13  |
------------------------------
+[ + ] Brute Forcing Login via XMLRPC...When you see any valid credentials press Ctrl + C to exit.
+[ i ] Setting user: admin
+[ + ] Valid Credentials:
 
+-----------------------
+| Username | Passowrd |
+-----------------------
+| admin    | password |
+-----------------------
 ```
 
 ### Scan plugin,theme and wordpress code
