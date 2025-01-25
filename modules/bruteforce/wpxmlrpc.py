@@ -27,7 +27,7 @@ class XMLRPCBrute(Request):
 			exit(warn('XML-RPC not found with this path: %s'%url))
 
 	def run(self):
-		plus('Brute Forcing Login via XMLRPC...When you see any valid credentials press Ctrl + C to exit.')
+		plus('Brute Forcing Login via XML-RPC...When you see any valid credentials press Ctrl + C to exit.')
 		if self.kwargs['verbose'] is True:
 			info('Setting user: %s'%(self.user))
 		self.check()
@@ -64,10 +64,11 @@ class ThreadBrute(Thread):
 			if search(decode('<name>isAdmin</name><value><boolean>0</boolean>'),resp.content):
 				login = True
 			elif search(decode('<name>isAdmin</name><value><boolean>1</boolean>'),resp.content):
-				login = True
+				login = False
 			if login is True:
 				plus('Valid Credentials: ')
 				normal('')
 				print(format_pretty_table([[self.user,passwd]],table))
 				self.queue.task_done()
 				self.queue.join()
+
