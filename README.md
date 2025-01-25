@@ -4,6 +4,12 @@
 
 - 3.13.1
 
+*OS's* support:
+
+- Ubuntu latest
+
+--------------------------------------------------------------------------------------
+
 <!--<h1 align="center">WSS:</b> In Development mode!!!</h1>-->
 
 ~WSS:In Development mode!!!~
