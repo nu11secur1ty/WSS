@@ -26,7 +26,7 @@ class wpplugins(Request):
 		if self.kwargs['verbose'] is True:
 			info('Checking plugins changelog...')
 		for file in self.files.get('changelogs', []):
-			url = Path(self.url, '/wp-content/plugins/%s/%s' % (plugin, file))
+			url = Path(self.url, '/wp-content/plugins/'.format(plugin, file))
 			resp = self.send(url=url, method="GET")
 			if resp.status_code == 200 and resp.content != ("" or None):
 				if resp.url == url:
@@ -38,7 +38,7 @@ class wpplugins(Request):
 			info('Checking plugins full path disclosure...')
 
 		for file in self.files.get('fpd', []):
-			url = Path(self.url, '/wp-content/plugins/%s/%s' % (plugin, file))
+			url = Path(self.url, '/wp-content/plugins/'.format(plugin, file))
 			resp = self.send(url=url, method="GET")
 			if resp.status_code == 200 and resp.content != ("" or None):
 				if resp.url == url:
@@ -52,7 +52,7 @@ class wpplugins(Request):
 			info('Checking plugins license...')
 
 		for file in self.files.get('license', []):
-			url = Path(self.url, '/wp-content/plugins/%s/%s' % (plugin, file))
+			url = Path(self.url, '/wp-content/plugins/'.format(plugin, file))
 			resp = self.send(url=url, method="GET")
 			if resp.status_code == 200 and resp.content != ("" or None):
 				if resp.url == url:
@@ -64,7 +64,7 @@ class wpplugins(Request):
 			info('Checking plugins directory listing...')
 
 		for dir_ in self.files.get('dirs', []):
-			url = Path(self.url, '/wp-content/plugins/%s/%s' % (plugin, dir_))
+			url = Path(self.url, '/wp-content/plugins/'.format(plugin, dir_))
 			resp = self.send(url=url, method="GET")
 			if resp.status_code == 200 and resp.content != ("" or None):
 				if search(decode('<title>Index of'), resp.content, I):
@@ -75,7 +75,7 @@ class wpplugins(Request):
 			info('Checking plugins readme...')
 
 		for file in self.files.get('readme', []):
-			url = Path(self.url, '/wp-content/plugins/%s/%s' % (plugin, file))
+			url = Path(self.url, '/wp-content/plugins/'.format(plugin, file))
 			resp = self.send(url=url, method="GET")
 			if resp.status_code == 200 and resp.content != ("" or None):
 				if resp.url == url:
@@ -112,7 +112,7 @@ class wpplugins(Request):
 		plugin = plugin.decode('utf-8')
 		# Fix 2025
 		# url = "https://www.wpvulndb.com/api/v2/plugins/%s"%(plugin)
-		url = "https://wpscan.com/plugins/%s"%(plugin)
+		url = "https://wpscan.com/plugins/".format(plugin)
 		resp = self.send(url=url,method="GET")
 		print(resp.content)
 		if resp.headers['Content-Type'] == 'application/json':
