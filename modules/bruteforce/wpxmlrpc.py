@@ -64,7 +64,7 @@ class ThreadBrute(Thread):
 			if search(decode('<name>isAdmin</name><value><boolean>0</boolean>'),resp.content):
 				login = True
 			elif search(decode('<name>isAdmin</name><value><boolean>1</boolean>'),resp.content):
-				login = False
+				login = True
 			if login is True:
 				plus('Valid Credentials: ')
 				normal('')
