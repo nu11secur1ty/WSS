@@ -223,7 +223,7 @@ class Scan:
 		vuln = []
 		blacklist = [
 					 '^\$_GET\[\S*\]','^\$_POST\[\S*\]','^\$_REQUEST\[\S*\]','^\$_SERVER\[\S*\]','^\$_COOKIE\[\S*\]',
-					 '^add_query_arg\(\S*\)','^remove_query_arg\(\S*\)'
+					 '\x5e\x61\x64\x64\x5f\x71\x75\x65\x72\x79\x5f\x61\x72\x67\x5c\x28\x5c\x53\x2a\x5c\x29','\x5e\x72\x65\x6d\x6f\x76\x65\x5f\x71\x75\x65\x72\x79\x5f\x61\x72\x67\x5c\x28\x5c\x53\x2a\x5c\x29'
 					 ]
 		for b in blacklist:
 			b = decode(b)
