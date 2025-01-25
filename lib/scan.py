@@ -206,9 +206,9 @@ class Scan:
 		# check sql injection
 		vuln = []
 		blacklist = [
-					 '?\$wpdb->query\(\S*\)','^\$wpdb->get_var\(\S*\)','^\$wpdb->get_row\(\S*\)','^\$wpdb->get_col\(\S*\)',
-					 '?\$wpdb->get_results\(\S*\)','^\$wpdb->replace\(\S*\)','^esc_sql\(\S*\)','^escape\(\S*\)','^esc_like\(\S*\)',
-					 '^like_escape\(\S*\)'
+					 "?\$wpdb->query\(\S*\)','^\$wpdb->get_var\(\S*\)','^\$wpdb->get_row\(\S*\)','^\$wpdb->get_col\(\S*\)",
+					 "?\$wpdb->get_results\(\S*\)','^\$wpdb->replace\(\S*\)','^esc_sql\(\S*\)','^escape\(\S*\)','^esc_like\(\S*\)",
+					 "^like_escape\(\S*\)"
 					 ]
 		for b in blacklist:
 			b = decode(b)
