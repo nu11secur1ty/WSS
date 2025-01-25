@@ -136,7 +136,7 @@ class wpplugins(Request):
 								for y in range(len(json[plugin]['vulnerabilities'][x]['references']['url'])):
 									more('Reference: %s'%(json[plugin]['vulnerabilities'][x]['references']['url'][y]))
 						more('Fixed in: %s'%(json[plugin]['vulnerabilities'][x]['fixed_in']))
-				else: more('Not found vulnerabilities')
-			else: more('Not found vulnerabilities')
-		else: more('Not found vulnerabilities')
+				else: more('Read Carefully in the WPScan database')
+			else: more('Read Carefully in the WPScan database')
+		else: more('Read Carefully in the WPScan database')
 		normal('')
