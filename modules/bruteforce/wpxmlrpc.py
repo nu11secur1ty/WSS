@@ -71,4 +71,6 @@ class ThreadBrute(Thread):
 				print(format_pretty_table([[self.user,passwd]],table))
 				self.queue.task_done()
 				self.queue.join()
+				break
+				exit()
 
