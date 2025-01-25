@@ -3,7 +3,8 @@
 - NOTE: only for web form login!
 
 ```
- python .\wp-login.py -t https://domain_or_IP/wp-login.php -u admin -p .\passwords.txt
+python .\wp-login.py -t https://domain_or_IP/wp-login.php -u admin -p .\passwords.txt
+python .\wp-login.py -t https://domain_or_IP/wp-login.php -u .\usernames.txt -p .\passwords.txt
 ```
 
 ### NOTE:
