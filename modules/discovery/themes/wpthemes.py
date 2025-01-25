@@ -45,7 +45,7 @@ class wpthemes(Request):
 			if resp.status_code == 200 and resp.content != ("" or None):
 				if resp.url == url:
 					if search(decode('<b>Fatal error</b>:'), resp.content, I):
-						path_d = findall(decode('<b>(/\S*)</b>'), resp.content)[0]
+						path_d = findall(decode('\x3c\x62\x3e\x28\x2f\x5c\x53\x2a\x29\x3c\x2f\x62\x3e'), resp.content)[0]
 						more('FPD (Full Path Disclosure): %s' % (path_d.decode('utf-8')))
 						break
 
@@ -113,7 +113,7 @@ class wpthemes(Request):
 			info('Checking theme vulnerabilities...')
 		theme = theme.decode('utf-8')
 		# Work here
-		url = "https://wpscan.com/themes/%s"%(theme)
+		url = "https://wpscan.com/themes/".format(theme)
 		resp = self.send(url=url,method="GET")
 		if resp.headers['Content-Type'] == 'application/json':
 			json = loads(resp.content)
