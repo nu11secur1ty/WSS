@@ -237,6 +237,11 @@ by nu11secur1ty
 
 [Extensions](https://github.com/nu11secur1ty/WSS/tree/main/extensions)
 
+## Combine the scanner with other instruments:
+- [G0BurpSQLmaPI](https://github.com/nu11secur1ty/G0BurpSQLmaPI)
+- [sqlmap](https://github.com/sqlmapproject/sqlmap)
+- [Burp Suite](https://portswigger.net/burp/releases#professional)
+
 ## Credits and Contributors
 Original idea and script from WPScan Team (https://wpscan.org/)
 
