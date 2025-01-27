@@ -25,3 +25,5 @@ class wpfile(Request):
 			if resp.status_code == 200 and resp.content != ("" or None):
 				if resp.url == url:
 					plus('%s file was found at: %s'%(file.decode('utf-8'),resp.url))
+			else:
+				print("The target is not responding or they are protected in this area...\n")
