@@ -18,6 +18,7 @@ class wpusers(Request):
 
 	def run(self):
 		info('Enumerating users...')
+		print("WARNING: If you don't see any users, they are with local management!\n")
 		users = []
 		users = self.wpjson()
 		users += self.wpjson2()
