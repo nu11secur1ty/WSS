@@ -26,4 +26,4 @@ class wpfile(Request):
 				if resp.url == url:
 					plus('%s file was found at: %s'%(file.decode('utf-8'),resp.url))
 			else:
-				print("The target is not responding or they are protected in this area...\n")
+				print("The target is not responding or this file path in not exist...\n")
