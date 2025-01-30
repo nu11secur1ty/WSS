@@ -129,7 +129,7 @@ def main () :
             brute force with valid username :  \n  
             python3 bf.py -t http://0.0.0.0/wp-login.php  -u user -p /path/to/password.txt  \n 
             Enumerate users ( just dont provide the -p flag it will use the default "admin" password to attempt the login : \n 
-            python3 bf.py -t http://0.0.0.0/wp-login.php  -u usernames.txt 
+            python3 bf.py -t http://0.0.0.0/wp-login.php  -u usernames.txt -p password.txt
             """ 
     print(help_message) 
 
