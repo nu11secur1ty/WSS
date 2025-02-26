@@ -16,6 +16,7 @@
 /wp-includes/images
 /wp-includes/pomo
 /wp-includes/theme-compat
+print("Next part...\n")
 ///wp-admin/install.php
 //2019/wp-login.php
 //2020/wp-login.php
