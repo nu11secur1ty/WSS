@@ -4,7 +4,7 @@
 
 *Python* support:
 
-- 3.13.1
+- 3.13.x
 
 *OS's* support:
 
