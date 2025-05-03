@@ -1,0 +1,21 @@
+Results of https://medicusalpha.bg/
+
+https://medicusalpha.bg//index.php - status_code : 200
+https://medicusalpha.bg//license.txt - status_code : 200
+https://medicusalpha.bg//readme.html - status_code : 200
+https://medicusalpha.bg//wp-activate.php - status_code : 200
+https://medicusalpha.bg//wp-admin - status_code : 200
+https://medicusalpha.bg//wp-blog-header.php - status_code : 404
+https://medicusalpha.bg//wp-comments-post.php - status_code : 405
+https://medicusalpha.bg//wp-config-sample.php - status_code : 500
+https://medicusalpha.bg//wp-content - status_code : 200
+https://medicusalpha.bg//wp-cron.php - status_code : 200
+https://medicusalpha.bg//wp-includes - status_code : 403
+https://medicusalpha.bg//wp-links-opml.php - status_code : 200
+https://medicusalpha.bg//wp-load.php - status_code : 200
+https://medicusalpha.bg//wp-login.php - status_code : 200
+https://medicusalpha.bg//wp-mail.php - status_code : 403
+https://medicusalpha.bg//wp-settings.php - status_code : 200
+https://medicusalpha.bg//wp-signup.php - status_code : 200
+https://medicusalpha.bg//wp-trackback.php - status_code : 404
+https://medicusalpha.bg//xmlrpc.php - status_code : 405
